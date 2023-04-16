@@ -3,7 +3,7 @@ import florecer from "./pages/home.js"
 
 
 
-Router({florecer})
+Router({"#florecer":florecer})
 
 
 
