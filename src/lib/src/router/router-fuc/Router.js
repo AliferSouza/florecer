@@ -3,12 +3,16 @@ import userTags from "./tagsComp.js"
 import erroPage from "../erroPage.js";
 
 
+window.global = () => {
+  const globalTags = document.body.getElementsByTagName("*")
+ return globalTags
+}
+
 export default function Router(componentsPages, component) {
   const cache = {};
   function getOrRenderComponent(componentCache) {
-
     const componentName = componentCache.toLowerCase();
-    const currentURL = location.pathname + location.hash;
+    const currentURL = location.pathname
     document.title = componentName.toUpperCase();
     
     if (!cache[componentName] || cache[componentName].url !== currentURL) {  
@@ -18,12 +22,10 @@ export default function Router(componentsPages, component) {
     
     return cache[componentName].component;
   } 
-
-
-
   
 
   async function route() {
+
     const URL = location.pathname.split("/")[1] || location.hash.replace("#", "")
     let currentPage = URL === "/" || URL === ""
       ? getOrRenderComponent(Object.keys(componentsPages)[0])
