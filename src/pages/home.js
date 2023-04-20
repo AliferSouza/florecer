@@ -1,48 +1,110 @@
-import cardColaboradores from "../components/cardColaboradores.js";
+import cardColaboradores from "../components/cardColaboradores.js"
 import relogio from "../components/relogio.js"
+import newsletter from "../components/newsletter.js"
+import cookie from "../components/cookie.js"
+
+
+
 
 export default async function Home() {
+ 
+  return ` 
+  <div class="container_home">  
+    <br>      
+
+          <img src="./src/img/vivivi.png" alt="Logo" width="200" height="50" loading="lazy"> 
   
-  return `
-    <div class="container_home">     
-      
-       ${relogio()}
-       <img src="./src/dados/IMG-20230414-WA0018-removebg-preview.png" >
-       ${cardColaboradores()}
+       
+          ${relogio()}
+          <br>  
+          <br>    
+          <img src="./src/img/banner2.png" alt="Logo" width="250" height="400" loading="lazy"> 
+         
+          <br>   
+          <br>   
+          <br>        
+          ${cardColaboradores()} 
+                 
+          <div class="container_home_texto">
+          <br>
+            <h2 style="text-align: center;">Workshop de Vivência terapêutica</h2>
+       
+              <h3 style="text-align: center;">Atenção Maravilhosa!!!</h3>
+              <br>
+              <p>Você está passando por um momento difícil?</p>
+              <p>Sente que é hora de cuidar do seu emocional?</p>
+              <p>Está cansada, estressada e precisa de um tempo para si mesma?</p>
+              <p>Quer relaxar e fazer networking com mulheres maravilhosas?</p>
+            
+              <p>Então não perca mais tempo!</p>
+              <p>
+              Este evento é exatamente o que você precisa para se reconectar com sua essência e se cuidar como a rainha que você é.
+              </p>
+              <p>Não perca a oportunidade de participar do 
+              <span style="font-size:16px; color: #e25959; font-weight: 900;">WORKSHOP DE VIVÊNCIAS FLORESCER </span> onde irá despertar cada pétala de autoestima e sabedoria que existe dentro de você. 
 
+              Aprenda coisas novas, descubra como se tornar ainda mais poderosa e sinta-se renovada em todos os sentidos.
+              
+              Não perca essa oportunidade única!
 
-      <div class="texte-container">
-        <h2>Workshop de Vivência - Espaço Jacarandá</h2>      
-        <p>
-          Venha participar do nosso workshop de vivência no Espaço Jacarandá em Betim, MG.
-          Serão 10 horas de pura atividade transformadora, com atividades que vão desde
-          auto massagem até cuidados com a beleza. Durante o evento, você terá direito a café
-          da manhã e chá gelado a tarde. O workshop acontecerá no dia 30/07/23, das 8 às 17h.
-          Não perca essa oportunidade única de transformação pessoal e bem-estar.
-        </p>
-     </div>
+              Junte-se a nós e experimente momentos inesquecíveis!
 
-    <div class="button-container">
-      <a href="https://telegram.org/" target="_blank" class="button button-telegram">Telegram</a>
-      <br>
-      <a href="https://simpla.com.br/" target="_blank" class="button button-simpla">Comprar Ingressos</a>
-    </div>
-    <br>
+          </p>
+          </div>
 
-    <div class="whatsapp">
-  <a href="https://wa.me/SEUNUMERODOWHATSAPP" target="_blank">
-  <img src="./src/img/whatsapp.png"  width="60" height="60">
-  </a>
-</div>
+     
 
+          <div class="container_home_buttons"> 
+            <a class="btn  btn-2" target="_blank" href="https://chat.whatsapp.com/KPtnnddG5muFxaCYtYCOzK">Promoções Grupo VIP</a>         
+            <a class="btn btn-1" target="_blank" href="https://www.sympla.com.br/evento/workshop-de-vivencias-florescer/1955194">Garantir meu ingresso</a>
+            <a class="btn btn-3" target="_blank" href="https://t.me/+GECkthe-9nlhMzY5"> Comunidade Terapeutica</a>      
+          </div>
 
+          <div class="whatsapp">
+            <a href="https://wa.me/5531971253590?text=Oi%2C+tudo+bem%21+Tenho+interesse+no+Workshop." target="_blank">
+            <img src="./src/img/whatsapp.png"  width="40" height="40">
+            </a>
+          </div>
 
-    </div>
+          <div class="cards">
+              <div class="card">
+            <div class="content">
+              <div class="title">1° Lote</div>
+              <div class="price">grupo VIP</div>
+              <div class="description">Apenas para os primeiro 20 ingressos</div>
+            </div>
+            <a href="https://chat.whatsapp.com/KPtnnddG5muFxaCYtYCOzK" target="_blank">
+              <button>
+              Comprar com ADM
+              </button>
+            </a>
+          </div>
 
+            <div class="cards">
+              <div class="card">
+            <div class="content">
+              <div class="title">2° lote</div>
+              <div class="price">Sympla</div>
+              <div class="description">Em até 12X</div>
+            </div>
+            <a href="https://www.sympla.com.br/evento/workshop-de-vivencias-florescer/1955194" target="_blank">
+              <button>
+              Compre agora
+              </button>
+            </a>
+            
+          </div>
 
+       
 
-
-
-    `;
+         </div>
+        
+   
+            
+          </div>
+          ${newsletter()}
+          ${await cookie()}
+          <br>
+          <br>
+          `
 }
-
