@@ -4,7 +4,8 @@ export default function cardColaboradores() {
 
    return `
     <div class="home-cards-container">
-      <div class="home-img-colaboradores">
+    <h2>Realização</h2>
+      <div class="home-img-colaboradores">     
         ${cardDateColaboradores.map(element =>`
         <a href="${element[element.id]}" target="_blank">
           <img id="${element.id}" class="home-img-colaboradores-redondo" src="${element.img}">
