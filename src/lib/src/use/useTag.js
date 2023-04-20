@@ -1,3 +1,3 @@
-export default async function (tag) {    
-return document.querySelectorAll(await tag) 
+export default async function useTag (tag) {   
+return document.querySelector(await tag) 
 }
