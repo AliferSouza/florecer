@@ -33,6 +33,7 @@ import useTags from "./src/use/useTags.js"
 import useClick from "./src/use/useClick.js"
 import useTag from "./src/use/useTag.js"
 import useSearch from "./src/URL/useSearch.js"
+import useFuc from "./src/use/useFuc.js"
 
 
 export {
@@ -63,5 +64,6 @@ export {
   useTag,
   useClick,
   useSearch,
-  Emitter
+  Emitter,
+  useFuc
 };
