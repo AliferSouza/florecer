@@ -30,7 +30,7 @@ window.aparecervideo = () =>{
   var floatingButton = document.getElementById("pop-video")
   var videoPalyPause = document.getElementById("videoPalyPause")
   floatingButton.style.display = "block";
-  videoPalyPause.play()
+
 
 }
 
