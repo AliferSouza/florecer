@@ -13,7 +13,10 @@ const diferencaEmDias = Math.round((dataFinal - dataAtual) / umDia);
 
   return `
     <div class="relogio">
-    Faltam ${diferencaEmDias} dias.
+     <h2>Faltam <span style="color: #FB6747">${diferencaEmDias}</span> dias.</h2>
+    <p>Para o evento que irá mudar</p>
+    <p>sua forma de viver...</p>
     </div>
+    
   `;
 }

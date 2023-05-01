@@ -1,9 +1,8 @@
 
 const cardDateColaboradores = [    
-    {id:"vivi",img :"./src/img/vivi.jpg",vivi:'https://www.instagram.com/viviane.snt_/'},
-    {id:"alifer", img:"./src/img/alifer.jpg",alifer:'https://www.instagram.com/alifer_oliveira_souza/'},
-    {id:"ester",img:"./src/img/Ester.jpg",ester:'https://www.instagram.com/grazileite.integrar/'},  
-    {id:"lest",img:"./src/img/lest.jpg",lest:'https://www.instagram.com/_drac_lb/'}
+    {id:"atellie",img :"./src/img/Atellier.jpeg",atellie:'https://www.instagram.com/latellierdesign_festa/?igshid=YmMyMTA2M2Y%3D'},
+    {id:"spa", img:"./src/img/spasants.jpeg",spa:'https://www.instagram.com/spavidasants/'},
+    {id:"cris",img :"./src/img/Cris.jpeg",cris:'https://instagram.com/cris_modaebeleza_?igshid=YmMyMTA2M2Y='}, 
   
  
 ]
